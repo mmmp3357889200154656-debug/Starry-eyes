@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎀 برای خرگوش کوچولوی من ✨</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #ff9a9e 0%, #a8c0ff 60%, #fbc2eb 100%);
+            font-family: 'Vazir', 'Segoe UI', Tahoma, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 30px;
+            padding: 50px 40px;
+            max-width: 500px;
+            width: 90%;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            backdrop-filter: blur(4px);
+        }
+
+        .stars {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+            margin-bottom: 12px;
+        }
+
+        .star-item {
+            font-size: 46px;
+            display: inline-block;
+            animation: starPulse 2s ease-in-out infinite;
+        }
+
+        .star-blue {
+            color: #4169E1;
+            text-shadow: 0 0 30px rgba(65, 105, 225, 0.4);
+            animation-delay: 0s;
+        }
+
+        .star-pink {
+            color: #FF99AA;
+            text-shadow: 0 0 30px rgba(255, 153, 170, 0.4);
+            animation-delay: 0.4s;
+        }
+
+        .star-blue2 {
+            color: #4169E1;
+            text-shadow: 0 0 30px rgba(65, 105, 225, 0.4);
+            animation-delay: 0.8s;
+        }
+
+        @keyframes starPulse {
+            0% {
+                transform: scale(1) rotate(0deg);
+                opacity: 0.5;
+            }
+            50% {
+                transform: scale(1.25) rotate(15deg);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1) rotate(0deg);
+                opacity: 0.5;
+            }
+        }
+
+        .title {
+            font-size: 26px;
+            color: #4169E1;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            color: #888;
+            font-size: 14px;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        .input-group {
+            margin-bottom: 25px;
+            text-align: right;
+        }
+
+        .input-group label {
+            display: block;
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 14px 18px;
+            border: 2px solid #e0e0e0;
+            border-radius: 15px;
+            font-size: 16px;
+            transition: 0.3s;
+            direction: ltr;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8);
+        }
+
+        .input-group input:focus {
+            border-color: #4169E1;
+            outline: none;
+            box-shadow: 0 0 20px rgba(65, 105, 225, 0.2);
+        }
+
+        .btn {
+            background: #FF99AA;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            padding: 16px 55px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: 0.4s;
+            margin-top: 10px;
+            font-weight: 700;
+            box-shadow: 0 6px 25px rgba(255, 153, 170, 0.4);
+            letter-spacing: 1px;
+        }
+
+        .btn:hover {
+            transform: scale(1.06) translateY(-3px);
+            background: #ffaabc;
+            box-shadow: 0 10px 35px rgba(255, 153, 170, 0.55);
+        }
+
+        .error {
+            background: #fde2e8;
+            border: 2px solid #FF99AA;
+            border-radius: 15px;
+            padding: 15px 20px;
+            margin: 20px 0;
+            color: #c06080;
+            font-weight: 600;
+        }
+
+        .error p {
+            font-size: 15px;
+            line-height: 1.7;
+        }
+
+        .error-btn {
+            background: linear-gradient(135deg, #FF99AA, #ff7a90);
+            color: white;
+            border: none;
+            padding: 10px 30px;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: 0.3s;
+            font-weight: 700;
+        }
+
+        .error-btn:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="stars">
+            <span class="star-item star-blue">★</span>
+            <span class="star-item star-pink">★</span>
+            <span class="star-item star-blue2">★</span>
+        </div>
+
+        <h1 class="title">هی هویج، بی زحمت این دوتا سوال رو جواب بده</h1>
+        <p class="subtitle">میدونم مسخرست</p>
+
+        <form method="POST" id="loveForm">
+            <div class="input-group">
+                <label>از دید من نام زیباترین دختر جهان چیست؟؟</label>
+                <input type="text" name="name" placeholder="نام درخشان خود را وارد کنید..." required>
+            </div>
+
+            <div class="input-group">
+                <label>دختر من، من را به چه نامی میشناسد؟</label>
+                <input type="text" name="lover_name" placeholder="نام من مهمه؟؟" required>
+            </div>
+
+            <button type="submit" class="btn">خب که چی؟؟</button>
+        </form>
+
+        {% if error %}
+        <div class="error" id="errorBox">
+            <p>🌸 عزیزترین، لطفا ابتدا نام <strong>خرگوش کوچولوی من</strong> و سپس <strong>نام خودم</strong> را به انگلیسی وارد کن</p>
+            <button class="error-btn" onclick="resetForm()">🥕 هویج تسلیم نمیشه</button>
+        </div>
+        {% endif %}
+
+    </div>
+
+    <script>
+        function resetForm() {
+            document.getElementById('loveForm').reset();
+            const errorBox = document.getElementById('errorBox');
+            if (errorBox) {
+                errorBox.style.display = 'none';
+            }
+            window.location.href = '/';
+        }
+    </script>
+
+</body>
+</html>
